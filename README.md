@@ -4,6 +4,21 @@ Coding assignment for Shopify Backend Developer Intern  Challenge - Summer 2022
 ## Live Application [Swagger UI]
 A live version of the deployed application can be found on - https://sheltered-woodland-98473.herokuapp.com/swagger-ui.html#/
 
+## How to run the code
+* Download IntelliJ community edition from [https://www.jetbrains.com/idea/]
+* Download the zip or clone the Git repository.
+* Unzip the zip file (if you downloaded one).
+* Open IntelliJ
+	* File -> Open -> Navigate to the folder where you unzipped the zip
+    * Select the right project
+	* Ensure project is opened as Trusted Project
+* Naviate to LogisticsInventoryManagerApplication (@SpringBootApplication)
+* Right Click on the file and Run as Java Application
+* Naviate to localhost:8080/swagger-ui.html in your browser
+* You are all set!
+
+The following could also be performed on other IDEs.
+
 ## API Details
 The project has two controller classes :
 * Item Controller - Enables CRUD operations on inventory item.
@@ -43,3 +58,4 @@ The following could be possibile extensions and scalability opportunities :
 * Get all items returns a list of "entity" which is not desirable. Model mapper can be utilised to convert this into list of ItemDTO.
 * Error handling needs to be updated inorder to catch and return readable error messages.
 * Logger needs to be added inorder to capture appropriate logs. 
+* The project currently uses an in-memory database. The following can ne moved to a permanent database.
