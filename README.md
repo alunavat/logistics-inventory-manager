@@ -57,5 +57,4 @@ The following could be possibile extensions and scalability opportunities :
 ## Known Limitations
 * Get all items returns a list of "entity" which is not desirable. Model mapper can be utilised to convert this into list of ItemDTO.
 * Error handling needs to be updated inorder to catch and return readable error messages.
-* Logger needs to be added inorder to capture appropriate logs. 
 * The project currently uses an in-memory database. The following can ne moved to a permanent database.
