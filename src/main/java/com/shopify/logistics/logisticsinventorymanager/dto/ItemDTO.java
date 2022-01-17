@@ -1,8 +1,9 @@
 package com.shopify.logistics.logisticsinventorymanager.dto;
 
-import com.shopify.logistics.logisticsinventorymanager.entity.Item;
 
-public class ItemDTO {
+import java.io.Serializable;
+
+public class ItemDTO implements Serializable {
     private Long id;
     private String name;
     private String type;
@@ -58,5 +59,16 @@ public class ItemDTO {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "ItemDTO{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                '}';
     }
 }

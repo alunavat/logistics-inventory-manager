@@ -2,12 +2,15 @@ package com.shopify.logistics.logisticsinventorymanager.dto;
 
 import com.shopify.logistics.logisticsinventorymanager.entity.Item;
 
-public class EditItemDTO {
+import java.io.Serializable;
+
+public class EditItemDTO implements Serializable {
     private String name;
     private String type;
     private String description;
     private double price;
 
+    // Added for serializable. Do not delete!
     public EditItemDTO() {
     }
 
@@ -30,20 +33,20 @@ public class EditItemDTO {
         return type;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
-
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public double getPrice() {
         return price;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public void setPrice(double price) {

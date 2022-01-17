@@ -2,12 +2,15 @@ package com.shopify.logistics.logisticsinventorymanager.dto;
 
 import com.shopify.logistics.logisticsinventorymanager.entity.Item;
 
-public class CreateItemDTO {
+import java.io.Serializable;
+
+public class CreateItemDTO implements Serializable {
     private String name;
     private String type;
     private String description;
     private double price;
 
+    // Added for serializable. Do not delete!
     public CreateItemDTO() {
     }
 

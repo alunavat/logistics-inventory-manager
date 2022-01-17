@@ -2,22 +2,24 @@ package com.shopify.logistics.logisticsinventorymanager.dto;
 
 import com.shopify.logistics.logisticsinventorymanager.entity.Item;
 
-public class DeleteItemDTO {
-    private String itemName;
+import java.io.Serializable;
 
+public class DeleteItemDTO implements Serializable {
+    private String name;
+
+    // Added for serializable. Do not delete!
     public DeleteItemDTO() {
     }
 
     public DeleteItemDTO(Item item) {
-        this.itemName = item.getName();
+        this.name = item.getName();
     }
 
-    public String getItemName() {
-        return itemName;
+    public String getName() {
+        return name;
     }
 
-    public void setItemName(String itemName) {
-        this.itemName = itemName;
+    public void setName(String name) {
+        this.name = name;
     }
-
 }
