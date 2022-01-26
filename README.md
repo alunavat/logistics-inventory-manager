@@ -1,9 +1,9 @@
 # logistics-inventory-manager
 Coding assignment for Shopify Backend Developer Intern  Challenge - Summer 2022
 
-## Live Application [Swagger UI]
+<!-- ## Live Application [Swagger UI]
 A live version of the deployed application can be found on - https://sheltered-woodland-98473.herokuapp.com/swagger-ui.html#/
-
+ -->
 ## How to run the code
 * Download IntelliJ community edition from [https://www.jetbrains.com/idea/]
 * Download the zip or clone the Git repository.
